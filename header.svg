@@ -31,4 +31,8 @@
 
   <rect x="428" y="143" width="168" height="22" rx="11" fill="#14141e" stroke="#2e2650" stroke-width="0.5"/>
   <text x="512" y="159" font-family="'Courier New', monospace" font-size="10" fill="#7a7a9a" text-anchor="middle" letter-spacing="1">intelligent systems</text>
+
+  <rect x="606" y="143" width="118" height="22" rx="11" fill="#14141e" stroke="#2e2650" stroke-width="0.5"/>
+  <text x="665" y="159" font-family="'Courier New', monospace" font-size="10" fill="#7a7a9a" text-anchor="middle" letter-spacing="1">APIs | Bots</text>
+  
 </svg>
