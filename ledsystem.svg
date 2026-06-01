@@ -1,0 +1,218 @@
+<svg width="800" height="700" viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- LED glow filter -->
+    <filter id="led-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur1"/>
+      <feGaussianBlur stdDeviation="10" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="led-glow-soft" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Border path: rounded rect 8x8 -->
+    <path id="border-path" d="
+      M 16 4
+      L 784 4
+      Q 796 4 796 16
+      L 796 684
+      Q 796 696 784 696
+      L 16 696
+      Q 4 696 4 684
+      L 4 16
+      Q 4 4 16 4
+      Z
+    " fill="none"/>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- HEADER (y=0, h=200) -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect width="800" height="200" fill="#0d0d10"/>
+  <line x1="0" y1="100" x2="800" y2="100" stroke="#1a1a22" stroke-width="0.5"/>
+  <line x1="400" y1="0" x2="400" y2="200" stroke="#1a1a22" stroke-width="0.5"/>
+  <ellipse cx="700" cy="40" rx="240" ry="160" fill="#7c5ecf" opacity="0.08"/>
+  <ellipse cx="100" cy="180" rx="160" ry="100" fill="#5de0c5" opacity="0.06"/>
+  <text x="400" y="70" font-family="'Courier New', monospace" font-size="11" fill="#7c5ecf" text-anchor="middle" letter-spacing="4" opacity="0.9">// hello world</text>
+  <text x="400" y="118" font-family="'Courier New', monospace" font-size="38" font-weight="700" fill="#f0eeff" text-anchor="middle" letter-spacing="-0.5">Olá, eu sou Brenno</text>
+  <rect x="150" y="128" width="500" height="1" rx="1" fill="#3a2d6a" opacity="0.8"/>
+  <rect x="104" y="143" width="148" height="22" rx="11" fill="#14141e" stroke="#2e2650" stroke-width="0.5"/>
+  <text x="178" y="159" font-family="'Courier New', monospace" font-size="10" fill="#7a7a9a" text-anchor="middle" letter-spacing="1">python developer</text>
+  <rect x="262" y="143" width="88" height="22" rx="11" fill="#14141e" stroke="#2e2650" stroke-width="0.5"/>
+  <text x="306" y="159" font-family="'Courier New', monospace" font-size="10" fill="#7a7a9a" text-anchor="middle" letter-spacing="1">backend</text>
+  <rect x="360" y="143" width="58" height="22" rx="11" fill="#14141e" stroke="#2e2650" stroke-width="0.5"/>
+  <text x="389" y="159" font-family="'Courier New', monospace" font-size="10" fill="#7a7a9a" text-anchor="middle" letter-spacing="1">web</text>
+  <rect x="428" y="143" width="168" height="22" rx="11" fill="#14141e" stroke="#2e2650" stroke-width="0.5"/>
+  <text x="512" y="159" font-family="'Courier New', monospace" font-size="10" fill="#7a7a9a" text-anchor="middle" letter-spacing="1">intelligent systems</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STACK (y=200, h=160) -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect y="200" width="800" height="160" fill="#0d0d10"/>
+  <line x1="400" y1="200" x2="400" y2="360" stroke="#1a1a22" stroke-width="0.5"/>
+  <ellipse cx="400" cy="280" rx="350" ry="60" fill="#7c5ecf" opacity="0.03"/>
+  <text x="400" y="230" font-family="'Courier New', monospace" font-size="11" fill="#7c5ecf" text-anchor="middle" letter-spacing="4">// stack</text>
+  <line x1="60" y1="210" x2="740" y2="210" stroke="#1e1e2e" stroke-width="0.5"/>
+  <!-- TypeScript -->
+  <rect x="40" y="242" width="90" height="88" rx="8" fill="#111118" stroke="#222230" stroke-width="0.5"/>
+  <rect x="40" y="242" width="90" height="3" rx="2" fill="#3178c6" opacity="0.9"/>
+  <text x="85" y="296" font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#3178c6" text-anchor="middle">TS</text>
+  <text x="85" y="318" font-family="'Courier New', monospace" font-size="9" fill="#4a4a6a" text-anchor="middle" letter-spacing="1">TypeScript</text>
+  <!-- Python -->
+  <rect x="145" y="242" width="90" height="88" rx="8" fill="#111118" stroke="#222230" stroke-width="0.5"/>
+  <rect x="145" y="242" width="90" height="3" rx="2" fill="#3776ab" opacity="0.9"/>
+  <text x="190" y="296" font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#3776ab" text-anchor="middle">PY</text>
+  <text x="190" y="318" font-family="'Courier New', monospace" font-size="9" fill="#4a4a6a" text-anchor="middle" letter-spacing="1">Python</text>
+  <!-- C -->
+  <rect x="250" y="242" width="90" height="88" rx="8" fill="#111118" stroke="#222230" stroke-width="0.5"/>
+  <rect x="250" y="242" width="90" height="3" rx="2" fill="#a8b9cc" opacity="0.9"/>
+  <text x="295" y="296" font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#a8b9cc" text-anchor="middle">C</text>
+  <text x="295" y="318" font-family="'Courier New', monospace" font-size="9" fill="#4a4a6a" text-anchor="middle" letter-spacing="1">C Language</text>
+  <!-- JavaScript -->
+  <rect x="355" y="242" width="90" height="88" rx="8" fill="#111118" stroke="#222230" stroke-width="0.5"/>
+  <rect x="355" y="242" width="90" height="3" rx="2" fill="#f7df1e" opacity="0.9"/>
+  <text x="400" y="296" font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#d4be10" text-anchor="middle">JS</text>
+  <text x="400" y="318" font-family="'Courier New', monospace" font-size="9" fill="#4a4a6a" text-anchor="middle" letter-spacing="1">JavaScript</text>
+  <!-- HTML5 -->
+  <rect x="460" y="242" width="90" height="88" rx="8" fill="#111118" stroke="#222230" stroke-width="0.5"/>
+  <rect x="460" y="242" width="90" height="3" rx="2" fill="#e34c26" opacity="0.9"/>
+  <text x="505" y="296" font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#e34c26" text-anchor="middle">H5</text>
+  <text x="505" y="318" font-family="'Courier New', monospace" font-size="9" fill="#4a4a6a" text-anchor="middle" letter-spacing="1">HTML5</text>
+  <!-- CSS3 -->
+  <rect x="565" y="242" width="90" height="88" rx="8" fill="#111118" stroke="#222230" stroke-width="0.5"/>
+  <rect x="565" y="242" width="90" height="3" rx="2" fill="#264de4" opacity="0.9"/>
+  <text x="610" y="296" font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#4a6ef5" text-anchor="middle">CSS</text>
+  <text x="610" y="318" font-family="'Courier New', monospace" font-size="9" fill="#4a4a6a" text-anchor="middle" letter-spacing="1">CSS3</text>
+  <!-- Next.js -->
+  <rect x="670" y="242" width="90" height="88" rx="8" fill="#111118" stroke="#222230" stroke-width="0.5"/>
+  <rect x="670" y="242" width="90" height="3" rx="2" fill="#f0eeff" opacity="0.6"/>
+  <text x="715" y="296" font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#d0c8f0" text-anchor="middle">N▲</text>
+  <text x="715" y="318" font-family="'Courier New', monospace" font-size="9" fill="#4a4a6a" text-anchor="middle" letter-spacing="1">Next.js</text>
+  <line x1="60" y1="350" x2="740" y2="350" stroke="#1e1e2e" stroke-width="0.5"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ABOUT (y=360, h=160) -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect y="360" width="800" height="160" fill="#0d0d10"/>
+  <ellipse cx="200" cy="440" rx="200" ry="80" fill="#5de0c5" opacity="0.03"/>
+  <text x="400" y="390" font-family="'Courier New', monospace" font-size="11" fill="#7c5ecf" text-anchor="middle" letter-spacing="4">// sobre</text>
+  <rect x="60" y="402" width="680" height="104" rx="8" fill="#0a0a12" stroke="#1e1e2e" stroke-width="0.5"/>
+  <rect x="60" y="402" width="680" height="26" rx="8" fill="#111120"/>
+  <rect x="60" y="416" width="680" height="12" fill="#111120"/>
+  <circle cx="82" cy="415" r="5" fill="#e34c26" opacity="0.85"/>
+  <circle cx="98" cy="415" r="5" fill="#d4be10" opacity="0.85"/>
+  <circle cx="114" cy="415" r="5" fill="#3dd68c" opacity="0.85"/>
+  <text x="400" y="420" font-family="'Courier New', monospace" font-size="10" fill="#3a3a5a" text-anchor="middle" letter-spacing="2">terminal — brenno@github</text>
+  <line x1="60" y1="428" x2="740" y2="428" stroke="#1a1a28" stroke-width="0.5"/>
+  <text x="82" y="450" font-family="'Courier New', monospace" font-size="12" fill="#7c5ecf">$</text>
+  <text x="96" y="450" font-family="'Courier New', monospace" font-size="12" fill="#5de0c5">whoami</text>
+  <text x="82" y="470" font-family="'Courier New', monospace" font-size="11" fill="#6a6a8a">Desenvolvedor focado em backend, sistemas inteligentes e interfaces web.</text>
+  <text x="82" y="488" font-family="'Courier New', monospace" font-size="11" fill="#6a6a8a">Atenção a performance, clareza e código que dura.</text>
+  <rect x="82" y="496" width="7" height="12" rx="1" fill="#5de0c5" opacity="0.75"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LINKS (y=520, h=130) -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect y="520" width="800" height="130" fill="#0d0d10"/>
+  <ellipse cx="600" cy="600" rx="200" ry="100" fill="#5bb3f0" opacity="0.04"/>
+  <text x="400" y="548" font-family="'Courier New', monospace" font-size="11" fill="#7c5ecf" text-anchor="middle" letter-spacing="4">// encontre-me</text>
+  <!-- LinkedIn -->
+  <rect x="60" y="562" width="200" height="64" rx="8" fill="#111118" stroke="#222230" stroke-width="0.5"/>
+  <rect x="60" y="562" width="4" height="64" rx="2" fill="#5bb3f0"/>
+  <text x="82" y="590" font-family="'Courier New', monospace" font-size="13" font-weight="700" fill="#5bb3f0">LinkedIn</text>
+  <text x="82" y="610" font-family="'Courier New', monospace" font-size="10" fill="#4a4a6a">brenno-josué</text>
+  <text x="250" y="598" font-family="'Courier New', monospace" font-size="18" fill="#1a3a5a" text-anchor="end">↗</text>
+  <!-- Discord -->
+  <rect x="300" y="562" width="200" height="64" rx="8" fill="#111118" stroke="#222230" stroke-width="0.5"/>
+  <rect x="300" y="562" width="4" height="64" rx="2" fill="#8891f5"/>
+  <text x="322" y="590" font-family="'Courier New', monospace" font-size="13" font-weight="700" fill="#8891f5">Discord</text>
+  <text x="322" y="610" font-family="'Courier New', monospace" font-size="10" fill="#4a4a6a">delta.codex</text>
+  <text x="490" y="598" font-family="'Courier New', monospace" font-size="18" fill="#1a1a3e" text-anchor="end">↗</text>
+  <!-- Instagram -->
+  <rect x="540" y="562" width="200" height="64" rx="8" fill="#111118" stroke="#222230" stroke-width="0.5"/>
+  <rect x="540" y="562" width="4" height="64" rx="2" fill="#f07090"/>
+  <text x="562" y="590" font-family="'Courier New', monospace" font-size="13" font-weight="700" fill="#f07090">Instagram</text>
+  <text x="562" y="610" font-family="'Courier New', monospace" font-size="10" fill="#4a4a6a">@delta.codex</text>
+  <text x="730" y="598" font-family="'Courier New', monospace" font-size="18" fill="#3a1a28" text-anchor="end">↗</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FOOTER (y=650, h=50) -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect y="650" width="800" height="50" fill="#0d0d10"/>
+  <line x1="60" y1="660" x2="740" y2="660" stroke="#1e1e2e" stroke-width="0.5"/>
+  <text x="400" y="684" font-family="'Courier New', monospace" font-size="10" fill="#2e2e48" text-anchor="middle" letter-spacing="2">brenno · github profile</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LED BORDER ANIMATION -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Outer glow layer (wide, soft) -->
+  <circle r="18" fill="none">
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#border-path"/>
+    </animateMotion>
+    <animate attributeName="r" values="18;22;18" dur="0.8s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#7c3fcf;#9b5cf6;#7c3fcf" dur="0.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Glow halo -->
+  <circle r="14" fill="#7c3fcf" opacity="0.25" filter="url(#led-glow-soft)">
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#border-path"/>
+    </animateMotion>
+  </circle>
+
+  <!-- Mid glow -->
+  <circle r="8" fill="#a06cf0" opacity="0.55" filter="url(#led-glow)">
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#border-path"/>
+    </animateMotion>
+  </circle>
+
+  <!-- Inner bright core -->
+  <circle r="4" fill="#e0d0ff" opacity="0.95">
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#border-path"/>
+    </animateMotion>
+  </circle>
+
+  <!-- White hot center -->
+  <circle r="2" fill="white" opacity="1">
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#border-path"/>
+    </animateMotion>
+  </circle>
+
+  <!-- Trail dot 1 (25% behind) -->
+  <circle r="5" fill="#8b4cf5" opacity="0.5" filter="url(#led-glow)">
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto" begin="-0.3s">
+      <mpath href="#border-path"/>
+    </animateMotion>
+  </circle>
+
+  <!-- Trail dot 2 (50% behind) -->
+  <circle r="3.5" fill="#7c3fcf" opacity="0.32" filter="url(#led-glow)">
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto" begin="-0.6s">
+      <mpath href="#border-path"/>
+    </animateMotion>
+  </circle>
+
+  <!-- Trail dot 3 (75% behind) -->
+  <circle r="2.5" fill="#5a2db0" opacity="0.18">
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto" begin="-0.9s">
+      <mpath href="#border-path"/>
+    </animateMotion>
+  </circle>
+
+  <!-- Trail dot 4 (fading end) -->
+  <circle r="1.5" fill="#3d1e8a" opacity="0.09">
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto" begin="-1.2s">
+      <mpath href="#border-path"/>
+    </animateMotion>
+  </circle>
+</svg>
