@@ -18,7 +18,7 @@
 <a href="https://discord.com/users/571705163471912981">
   <img src="https://img.shields.io/badge/Discord-0d0d10?style=for-the-badge&logo=discord&logoColor=8891f5" />
 </a>
-<a href="https://instagram.com/brenno_delta">
+<a href="https://instagram.com/delta.codex">
   <img src="https://img.shields.io/badge/Instagram-0d0d10?style=for-the-badge&logo=instagram&logoColor=f07090" />
 </a>
 
