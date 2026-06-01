@@ -24,7 +24,7 @@
   <text x="178" y="159" font-family="'Courier New', monospace" font-size="10" fill="#7a7a9a" text-anchor="middle" letter-spacing="1">python developer</text>
 
   <rect x="262" y="143" width="88" height="22" rx="11" fill="#14141e" stroke="#2e2650" stroke-width="0.5"/>
-  <text x="306" y="159" font-family="'Courier New', monospace" font-size="10" fill="#7a7a9a" text-anchor="middle" letter-spacing="1">backend</text>
+  <text x="306" y="159" font-family="'Courier New', monospace" font-size="10" fill="#7a7a9a" text-anchor="middle" letter-spacing="1">Frontend</text>
 
   <rect x="360" y="143" width="58" height="22" rx="11" fill="#14141e" stroke="#2e2650" stroke-width="0.5"/>
   <text x="389" y="159" font-family="'Courier New', monospace" font-size="10" fill="#7a7a9a" text-anchor="middle" letter-spacing="1">web</text>
